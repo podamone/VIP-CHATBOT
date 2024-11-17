@@ -49,7 +49,7 @@ async def clone_txt(client, message):
         except Exception as e:
             cloned_bot = await clonebotdb.find_one({"token": bot_token})
             if cloned_bot:
-                await mi.edit_text("**🤖 Your bot is already cloned ✅**")
+                await mi.edit_text("**🤖 Your bot is already cloned ✅ @tscoa **")
                 return
 
         await mi.edit_text("**Cloning process started. Please wait for the bot to start.**")
@@ -79,10 +79,10 @@ async def clone_txt(client, message):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @THE_VIP_BOY_OP for assistance**"
+                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @tscoa for assistance**"
             )
     else:
-        await message.reply_text("**Provide Bot Token after /clone Command from @Botfather.**")
+        await message.reply_text("** നിങ്ങളുടെ പേരിൽ നിങ്ങൾക്കും ചാറ്റ് ബോട്ട് ഉണ്ടാക്കാം Provide Bot Token after /clone Command from @Botfather.**")
 
 
 @Client.on_message(filters.command("cloned"))
