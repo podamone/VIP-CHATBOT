@@ -1,7 +1,7 @@
 {
   "name": "nexichat",
   "description": "A telegram bot",
-  "logo": "https://envs.sh/IL_.jpg",
+  "logo": "https://envs.sh/A_c.jpg",
   "keywords": [
     "Chatbot",
     "mongodb",
@@ -11,7 +11,7 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/THE-VIP-BOY-OP/VIP-CHATBOT",
+  "repository": "https://github.com/podamone/VIP-CHATBOT",
   "env": {
     "BOT_TOKEN": {
       "description": "A Bot token from @BotFather",
